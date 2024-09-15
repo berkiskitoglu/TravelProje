@@ -1,0 +1,15 @@
+﻿@model TravelProje.Models.Sınıflar.Yorumlar
+
+<div class="content-form">
+    <h3>Bir Yorum Yapın</h3>
+    
+    <form method="post">
+        <input type="text" placeholder="ID" name="BlogID"  value="@ViewBag.deger"  required  />
+        <input type="text" placeholder="Kullanıcı Adı" name="KullaniciAdi" required />
+        <input type="text" placeholder="Mail Adresi" name="Mail" required />
+
+        <textarea placeholder="Yorum" name="Yorum" required></textarea>
+        <input type="submit" value="Gonder" />
+    </form>
+    
+</div>
